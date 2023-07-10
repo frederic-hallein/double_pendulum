@@ -14,8 +14,8 @@ int main(int argc, char* argv[]){
     const int screen_width = 700;
     const int screen_height = 700;
 
-    double x_center = screen_width / 2;
-    double y_center = screen_height / 2;
+    int x_center = screen_width / 2;
+    int y_center = screen_height / 2;
 
     // initial setup
     double m_1 = 100;
