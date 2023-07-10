@@ -8,5 +8,5 @@ Moreover, one can change the initial starting angles (ini_theta_1 and ini_theta)
 that the angles are postive in the counter-clockwise direction. Furthermore, the stepsize h sets the size of timestep in the Runge Kutta calculation,
 while the delay_time sets up the speed of the animation. 
 
-After finishing the setup, type the command "mingw32-make -f makefile" inside the terminal to save the changes. After that, run the code 
+To save the changes, type the command "mingw32-make -f makefile" inside the terminal inside the double_pendulum directory. After that, run the code 
 by typing "./main".
