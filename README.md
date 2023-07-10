@@ -1,6 +1,6 @@
 # double_pendulum
 Simulation double pendulum through Runge Kutta method. The calculation is based on this simulation:
-https://www.myphysicslab.com/pendulum/double-pendulum-en.html
+https://www.myphysicslab.com/pendulum/double-pendulum-en.html. The animation is made using the SDL library. 
 
 # Steps necessary to run simulation
 In main.cpp, set up the initial conditions, i.e. choosing the masses of the disks (m_1 and m_2) and lengths of rods (L_1 and L_2).
