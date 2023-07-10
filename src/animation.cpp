@@ -8,6 +8,7 @@ SDL_Window* get_window(int screen_width, int screen_height){
     SDL_Window* window = SDL_CreateWindow("double pendulum simulation", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, screen_width, screen_height, SDL_WINDOW_ALLOW_HIGHDPI);
     if(window == nullptr){
         std::cout << "Could not create window: " << SDL_GetError() <<std::endl;
+        return window;
     }
 
     return window;
@@ -17,6 +18,7 @@ SDL_Renderer* get_renderer(SDL_Window* window){
     SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 0);
     if(renderer == nullptr){
         std::cout << "Could not create renderer: " << SDL_GetError() <<std::endl;
+        return renderer;
     }
 
     return renderer;
@@ -27,6 +29,7 @@ SDL_Texture* get_texture(SDL_Renderer* renderer, const char* filepath){
     if(texture == nullptr){
         std::cout << "Image could not be loaded from file path: " << filepath << std::endl;
         std::cout << "Error: " << SDL_GetError() << std::endl;
+        return texture;
     }
 
     return texture;

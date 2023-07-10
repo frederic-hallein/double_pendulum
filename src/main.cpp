@@ -35,7 +35,7 @@ int main(int argc, char* argv[]){
     double h = 0.1; 
 
     // delay time of animation in milliseconds
-    Uint32 delay_time = 1.5;
+    Uint32 delay_time = 5;
 
     double t = h;
     double theta_1 = ini_theta_1;
@@ -57,6 +57,11 @@ int main(int argc, char* argv[]){
     const char* filepath = "res/red_disk.png";
     SDL_Texture* disk = get_texture(renderer, filepath);
 
+    // check if winow, renderer and disk are created
+    if(window == nullptr || renderer == nullptr || disk == nullptr){
+        return 1;
+    }
+
 
     bool is_running = true;
     while(is_running){
@@ -67,7 +72,7 @@ int main(int argc, char* argv[]){
             }
         }
 
-        std::cout << t << " : " << "(" << x_1 << "," << y_1 << ")" << "," << "(" << x_2 << "," << y_2 << ")"<< std::endl;
+        //std::cout << t << " : " << "(" << x_1 << "," << y_1 << ")" << "," << "(" << x_2 << "," << y_2 << ")"<< std::endl;
 
         // positions of two disks
         double x_1_pos = x_center + x_1;
