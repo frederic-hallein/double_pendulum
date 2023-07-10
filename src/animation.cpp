@@ -15,7 +15,7 @@ SDL_Window* get_window(int screen_width, int screen_height){
 }
 
 SDL_Renderer* get_renderer(SDL_Window* window){
-    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 0);
+    SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
     if(renderer == NULL){
         std::cout << "Could not create renderer: " << SDL_GetError() <<std::endl;
         return renderer;

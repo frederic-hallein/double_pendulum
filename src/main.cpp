@@ -58,7 +58,7 @@ int main(int argc, char* argv[]){
     SDL_Texture* disk = get_texture(renderer, filepath);
 
     // check if winow, renderer and disk are created
-    if(window == nullptr || renderer == nullptr || disk == nullptr){
+    if(window == NULL || renderer == NULL || disk == NULL){
         return 1;
     }
 
@@ -94,9 +94,9 @@ int main(int argc, char* argv[]){
     // destroy everything
     destroy(window, renderer, disk);
 
-    window = nullptr;
-    renderer = nullptr;
-    disk = nullptr;
+    window = NULL;
+    renderer = NULL;
+    disk = NULL;
 
     SDL_Quit();
 
