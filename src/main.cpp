@@ -66,7 +66,7 @@ int main(int argc, char* argv[]){
     bool is_running = true;
     while(is_running){
         SDL_Event event;
-        while(SDL_PollEvent(&event) != 0){
+        while(SDL_PollEvent(&event)){
             if(event.type == SDL_QUIT){
                 is_running = false;   
             }
