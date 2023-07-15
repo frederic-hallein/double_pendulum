@@ -14,8 +14,8 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
         std::cout << "\nDefault setup: \n" << std::endl;
         std::cout << "m_1 = 1" << std::endl;
         std::cout << "m_2 = 1" << std::endl;
-        std::cout << "L_1 = 1.5" << std::endl;
-        std::cout << "L_2 = 1.5" << std::endl;
+        std::cout << "L_1 = 150" << std::endl;
+        std::cout << "L_2 = 150" << std::endl;
         std::cout << "ini_theta_1 = 3.14" << std::endl;
         std::cout << "ini_theta_2 = 3.14" << std::endl;
 
