@@ -1,6 +1,8 @@
 #define SDL_MAIN_HANDLED
 
 #include <iostream>
+#include <string>
+#include <sstream>
 #include <cmath>
 #include <vector>
 #include <SDL2/SDL.h>
@@ -8,6 +10,7 @@
 
 #include "header_files/calculation.h"
 #include "header_files/animation.h"
+#include "header_files/initialize.h"
 
 int main(int argc, char* argv[]){
     // screen size
@@ -17,20 +20,28 @@ int main(int argc, char* argv[]){
     int x_center = screen_width / 2;
     int y_center = screen_height / 2;
 
-    // initial setup
-    double m_1 = 100;
-    double m_2 = 100;
-    double L_1 = 150;
-    double L_2 = 150;
-
     // constants
     const double g = 9.81;
     const double pi = 3.14;
 
-    // initial starting angles
+    // initial setup (default)
+    double m_1 = 1;
+    double m_2 = 1;
+    double L_1 = 150;
+    double L_2 = 150;
+
+    // initial starting angles (default)
     double ini_theta_1 = pi;
     double ini_theta_2 = pi;
-    
+
+    // initialize set up
+    bool is_initialized = false;
+    while(!(is_initialized))
+    {
+        initialize(is_initialized, m_1, m_2, L_1, L_2, ini_theta_1, ini_theta_2);
+    }
+
+
     // stepsize
     double h = 0.1; 
 
