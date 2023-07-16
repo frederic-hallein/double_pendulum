@@ -16,8 +16,8 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
         std::cout << "m_2 = 1" << std::endl;
         std::cout << "L_1 = 150" << std::endl;
         std::cout << "L_2 = 150" << std::endl;
-        std::cout << "ini_theta_1 = 3.14" << std::endl;
-        std::cout << "ini_theta_2 = 3.14" << std::endl;
+        std::cout << "ini_theta_1 = 180" << std::endl;
+        std::cout << "ini_theta_2 = 180" << std::endl;
 
         is_initialized = true;
     }
@@ -62,7 +62,7 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
             std::cin.ignore(1000,'\n');
         }
 
-        std::cout << "Enter initial angle 1" << std::endl;
+        std::cout << "Enter initial angle 1 (in degrees)" << std::endl;
         std::cout << "ini_theta_1 = ";
         while (!(std::cin >> ini_theta_1))
         {
@@ -72,7 +72,7 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
             std::cin.ignore(1000,'\n');
         }
 
-        std::cout << "Enter initial angle 2" << std::endl;
+        std::cout << "Enter initial angle 2 (in degrees)" << std::endl;
         std::cout << "ini_theta_2 = ";
         while (!(std::cin >> ini_theta_2))
         {
