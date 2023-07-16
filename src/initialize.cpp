@@ -11,13 +11,13 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
     std::string input;
     std::getline(std::cin, input);
     if (input == "d"){
-        std::cout << "\nDefault setup: \n" << std::endl;
-        std::cout << "m_1 = 1" << std::endl;
-        std::cout << "m_2 = 1" << std::endl;
-        std::cout << "L_1 = 150" << std::endl;
-        std::cout << "L_2 = 150" << std::endl;
-        std::cout << "ini_theta_1 = 180" << std::endl;
-        std::cout << "ini_theta_2 = 180" << std::endl;
+        std::cout << "\nPersonal setup: \n" << std::endl;
+        std::cout << "m_1 = " << m_1 << std::endl;
+        std::cout << "m_2 = " << m_2 << std::endl;
+        std::cout << "L_1 = " << L_1 << std::endl;
+        std::cout << "L_2 = " << L_2 << std::endl;
+        std::cout << "ini_theta_1 = " << ini_theta_1 << std::endl;
+        std::cout << "ini_theta_2 = " << ini_theta_2 << std::endl;
 
         is_initialized = true;
     }
