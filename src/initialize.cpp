@@ -90,6 +90,7 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
         std::cout << "ini_theta_1 = " << ini_theta_1 << std::endl;
         std::cout << "ini_theta_2 = " << ini_theta_2 << std::endl;
 
+
         is_initialized = true;
     }
 
