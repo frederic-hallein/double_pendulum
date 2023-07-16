@@ -31,8 +31,8 @@ int main(int argc, char* argv[]){
     double L_2 = 150;
 
     // initial starting angles (default)
-    double ini_theta_1 = pi;
-    double ini_theta_2 = pi;
+    double ini_theta_1 = 180;
+    double ini_theta_2 = 180;
 
     // initialize set up
     bool is_initialized = false;
@@ -40,6 +40,10 @@ int main(int argc, char* argv[]){
     {
         initialize(is_initialized, m_1, m_2, L_1, L_2, ini_theta_1, ini_theta_2);
     }
+
+    // convert to radians
+    ini_theta_1 *= (pi / 180);
+    ini_theta_2 *= (pi / 180);
 
 
     // stepsize
