@@ -1,5 +1,5 @@
 # double_pendulum
-Simulation double pendulum through Runge Kutta method. The calculation is based on this simulation:
+Simulation of the famous double pendulum system through Runge Kutta method of order 4. The calculation is based on this simulation:
 https://www.myphysicslab.com/pendulum/double-pendulum-en.html. The animation is made using the SDL library. 
 
 # How to run
