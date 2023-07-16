@@ -11,7 +11,7 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
     std::string input;
     std::getline(std::cin, input);
     if (input == "d"){
-        std::cout << "\nPersonal setup: \n" << std::endl;
+        std::cout << "\nDefault setup: \n" << std::endl;
         std::cout << "m_1 = " << m_1 << std::endl;
         std::cout << "m_2 = " << m_2 << std::endl;
         std::cout << "L_1 = " << L_1 << std::endl;
