@@ -34,11 +34,15 @@ int main(int argc, char* argv[]){
     double ini_theta_1 = 180;
     double ini_theta_2 = 180;
 
+    // friction
+    char with_friction = 'n';
+    double friction = 0.999;
+
     // initialize set up
     bool is_initialized = false;
     while(!(is_initialized))
     {
-        initialize(is_initialized, m_1, m_2, L_1, L_2, ini_theta_1, ini_theta_2);
+        initialize(is_initialized, m_1, m_2, L_1, L_2, ini_theta_1, ini_theta_2, with_friction);
     }
 
     // convert to radians
@@ -99,6 +103,12 @@ int main(int argc, char* argv[]){
 
         // apply Runge-Kutta of order 4
         RK4(t, h, theta_1, theta_2, omega_1, omega_2, m_1, m_2, L_1, L_2, g, pi);
+
+        // apply friction
+        if (with_friction == 'y'){
+            theta_1 *= friction;
+            theta_2 *= friction;
+        }
 
         // convert to cartesian coordinates
         polar_to_cartesian_transform(x_1, y_1, x_2, y_2, theta_1, theta_2, L_1, L_2);
