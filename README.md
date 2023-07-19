@@ -12,7 +12,7 @@ Step 4: Run main.exe. The terminal will output a text in regards to setting up t
 # Troubleshooting
 
 If the command from Step 3 is not recognized, try to install the mingw-get-setup from the website: \
-https://sourceforge.net/projects/mingw/ and install the mingw32-make package in the MinGW Installation Manager. After that, \
+https://sourceforge.net/projects/mingw/ and install the mingw32-make package in the MinGW Installation Manager. After that, 
 make sure you have "mingw32\bin" in your PATH. 
 
 # Screenshot
