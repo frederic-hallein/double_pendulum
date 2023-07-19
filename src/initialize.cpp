@@ -4,7 +4,7 @@
 
 #include "header_files/initialize.h"
 
-void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, double& L_2, double& ini_theta_1, double& ini_theta_2){
+void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, double& L_2, double& ini_theta_1, double& ini_theta_2, char& with_friction){
 
     std::cout << "Press enter to set up initial conditions, otherwise type \"d\" for default values. ";
 
@@ -18,6 +18,7 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
         std::cout << "L_2 = " << L_2 << std::endl;
         std::cout << "ini_theta_1 = " << ini_theta_1 << std::endl;
         std::cout << "ini_theta_2 = " << ini_theta_2 << std::endl;
+        std::cout << "friction: no" << std::endl;
 
         is_initialized = true;
     }
@@ -82,6 +83,15 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
             std::cin.ignore(1000,'\n');
         }
 
+        std::cout << "With friction? (y/n) ";
+        while (!(std::cin >> with_friction) || (with_friction != 'y' && with_friction != 'n'))
+        {
+            std::cout << "Invalid. Enter again." << std::endl;
+            std::cout << "With friction? (y/n) ";
+            std::cin.clear();
+            std::cin.ignore(1000,'\n');
+        }
+
         std::cout << "\nPersonal setup: \n" << std::endl;
         std::cout << "m_1 = " << m_1 << std::endl;
         std::cout << "m_2 = " << m_2 << std::endl;
@@ -89,7 +99,9 @@ void initialize(bool& is_initialized, double& m_1, double& m_2, double& L_1, dou
         std::cout << "L_2 = " << L_2 << std::endl;
         std::cout << "ini_theta_1 = " << ini_theta_1 << std::endl;
         std::cout << "ini_theta_2 = " << ini_theta_2 << std::endl;
-
+        if (with_friction == 'y'){std::cout << "friction: yes"  << std::endl;}
+        else {std::cout << "friction: no"  << std::endl;}
+        
         is_initialized = true;
     }
 
