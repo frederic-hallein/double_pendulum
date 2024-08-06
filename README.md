@@ -1,19 +1,16 @@
 # double_pendulum
-Simulation of the famous double pendulum system through the Runge Kutta method of order 4. The calculation is based on the simulation
-from this website: https://www.myphysicslab.com/pendulum/double-pendulum-en.html. The animation is made using the SDL library. 
+A double pendulum is a pendulum with another pendulum attached to its end. This code simulates the temporal evolution of the
+double pendulum by solving a set of coupled ordinary differential equations (using the Runge Kutta method) with given user specified
+initial conditions. The rendering is done using the SDL2 library. 
 
 # How to run
 
 Step 1: Download all the files. \
-Step 2: Via a terminal go to the double_pendulum directory. \
-Step 3: Enter the "mingw32-make -f makefile" command. This should create a main.exe in the same folder. \
-Step 4: Run main.exe. The terminal will output a text in regards to setting up the initial conditions of the double pendulum system. 
-
-# Troubleshooting
-
-If the command from Step 3 is not recognized, try to install the mingw-get-setup from the website: \
-https://sourceforge.net/projects/mingw/ and install the mingw32-make package in the MinGW Installation Manager. After that, 
-make sure you have "mingw32\bin" in your PATH. 
+Step 2: Open a terminal and go inside the `/double_pendulum` directory. \
+Step 3: By running the `make all` command, it creates a `main` executable file in the same directory.  \
+Step 4: Run the executable using the following command: `./main`. \
+Step 5: Set up the initial conditions of the double pendulum or enter `d` to run the default values. 
 
 # Screenshot
-![Screenshot 2023-07-15 221623](https://github.com/famecryptic/double_pendulum/assets/124629735/ad067964-3566-4643-88e1-7a890af09df8)
+
+[Screencast from 2024-08-06 14-48-29.webm](https://github.com/user-attachments/assets/11727669-aa58-4828-b112-ed4d8f248b12)
