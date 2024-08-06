@@ -1,9 +1,9 @@
-# double_pendulum
+# Double Pendulum
 A double pendulum is a pendulum with another pendulum attached to its end. This code simulates the temporal evolution of the
 double pendulum by solving a set of coupled ordinary differential equations (using the Runge Kutta method) with given user specified
 initial conditions. The rendering is done using the SDL2 library. 
 
-# How to run
+# How to run (Linux)
 
 Step 1: Download all the files. \
 Step 2: Open a terminal and go inside the `/double_pendulum` directory. \
