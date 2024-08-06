@@ -11,6 +11,6 @@ Step 3: By running the `make all` command, it creates a `main` executable file i
 Step 4: Run the executable using the following command: `./main`. \
 Step 5: Set up the initial conditions of the double pendulum or enter `d` to run the default values. 
 
-# Screenshot
+# Screencast
 
 [Screencast from 2024-08-06 14-48-29.webm](https://github.com/user-attachments/assets/11727669-aa58-4828-b112-ed4d8f248b12)
