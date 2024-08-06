@@ -1,8 +1,6 @@
 #include <iostream>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
 
-#include "header_files/animation.h"
+#include "animation.hpp"
 
 SDL_Window* get_window(int screen_width, int screen_height){
     SDL_Window* window = SDL_CreateWindow("double pendulum simulation", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, screen_width, screen_height, SDL_WINDOW_ALLOW_HIGHDPI);

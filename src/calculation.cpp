@@ -1,7 +1,7 @@
 #include <cmath>
 #include <vector>
 
-#include "header_files/calculation.h"
+#include "calculation.hpp"
 
 double f1(double theta_1, double theta_2, double omega_1, double omega_2, double m_1, double m_2, double L_1, double L_2, const double g, const double pi){
     return (-g * (2 * m_1 + m_2) * sin(theta_1) - m_2 * g * sin(theta_1 - 2 * theta_2) 

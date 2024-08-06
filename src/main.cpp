@@ -5,12 +5,10 @@
 #include <sstream>
 #include <cmath>
 #include <vector>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
 
-#include "header_files/calculation.h"
-#include "header_files/animation.h"
-#include "header_files/initialize.h"
+#include "calculation.hpp"
+#include "animation.hpp"
+#include "initialization.hpp"
 
 int main(int argc, char* argv[]){
     // screen size
