@@ -17,7 +17,7 @@ Step 5: Run the executable by typing the following command:
 ```
 ./main
 ```
-Step 6: Set up the initial conditions of the double pendulum or enter `d` to run the default values. 
+Step 6: Set up the initial conditions of the double pendulum or type `d` to run the default values. 
 
 # Screencast
 
