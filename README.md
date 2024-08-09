@@ -6,10 +6,18 @@ initial conditions. The rendering is done using the SDL2 library.
 # How to run (Linux)
 
 Step 1: Download all the files. \
-Step 2: Open a terminal and go inside the `/double_pendulum` directory. \
-Step 3: By running the `make all` command, it creates a `main` executable file in the same directory.  \
-Step 4: Run the executable using the following command: `./main`. \
-Step 5: Set up the initial conditions of the double pendulum or enter `d` to run the default values. 
+Step 2: Install the SDL2 library using the following website: https://lazyfoo.net/tutorials/SDL/01_hello_SDL/linux/index.php. \
+Step 3: Open a terminal and go inside the `/double_pendulum` directory. \
+Step 4: Type the following command: 
+```
+make all
+``` 
+This should create a `main` executable file in the same directory.  \
+Step 5: Run the executable by typing the following command: 
+```
+./main
+```
+Step 6: Set up the initial conditions of the double pendulum or enter `d` to run the default values. 
 
 # Screencast
 
